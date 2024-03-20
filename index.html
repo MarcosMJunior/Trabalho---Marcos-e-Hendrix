@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cassino Online</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Bem-vindo ao Cassino Online</h1>
+    <form action="play.php" method="POST">
+        <label for="bet">Faça sua aposta:</label>
+        <input placeholder="Digite um valor" type="number" name="bet" id="bet" required>
+        <label for="guess">Adivinhe se o dado cairá entre 1 e 3 ou entre 4 e 6(Escolha "0" para 1, 2 e 3 ou "1" para 4, 5 e 6):</label>
+        <input type="number" name="guess" id="guess" min="0" max="1" required>
+        <br>
+        <button type="submit">Jogar</button>
+    </form>
+</body>
+</html>
